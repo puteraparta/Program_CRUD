@@ -8,7 +8,6 @@ The main purpose is to streamline stock management, order processing, and report
 Purpose:
 The main aim of this system is to provide a comprehensive solution for managing the inventory of spare parts used in heavy equipment. It helps in maintaining an accurate record of stock levels, managing inbound orders, and generating reports for better decision-making.
 
-
 Users:
 1. Inventory Controllers
 2. Operations Managers
