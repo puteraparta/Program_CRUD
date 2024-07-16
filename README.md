@@ -17,7 +17,9 @@ The main aim of this system is to provide a comprehensive solution for managing 
 **Benefits**
 
 *Improved Accuracy*: Automated tracking reduces human errors in inventory management.
+
 *Enhanced Efficiency*: Streamlined processes save time and improve operational efficiency.
+
 *Order Management*: Efficient handling of inbound orders ensures timely replenishment of stock.
 
 **Key Functions and Menu Selections**
