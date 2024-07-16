@@ -13,3 +13,17 @@ Users:
 
 1. Inventory Controllers
 2. Operations Managers
+
+
+Benefits:
+
+Improved Accuracy: Automated tracking reduces human errors in inventory management.
+Enhanced Efficiency: Streamlined processes save time and improve operational efficiency.
+Order Management: Efficient handling of inbound orders ensures timely replenishment of stock.
+
+Key Functions and Menu Selections
+
+1. Stock Management
+2. Order Inbound Management
+3. Report Menu
+4. Exit Program
