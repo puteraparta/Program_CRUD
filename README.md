@@ -12,4 +12,4 @@ The main aim of this system is to provide a comprehensive solution for managing 
 Users:
 
 1. Inventory Controllers
-2.Operations Managers
+2. Operations Managers
