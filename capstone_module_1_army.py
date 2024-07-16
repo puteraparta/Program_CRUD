@@ -807,7 +807,7 @@ def sort_report_descending(data_part):
     for i in range(len(data_part)):
         index=i
         for j in range(i+1, len(data_part)):
-            if data_part[j]['part_quantity'] > data_part[index]['part_quantity']:   # Find the index of the part with the highest quantity
+            if data_part[j]['part_quantity'] < data_part[index]['part_quantity']:   # Find the index of the part with the highest quantity
                 index = j
         data_part[i], data_part[index] = data_part[index], data_part[i] # Swap the position the highest quantity part at the current index    
 
@@ -815,7 +815,7 @@ def sort_report_ascending(data_part):
     for i in range(len(data_part)):
         index=i
         for j in range(i+1, len(data_part)):
-            if data_part[j]['part_quantity'] < data_part[index]['part_quantity']:   # Find the index of the part with the lowest quantity
+            if data_part[j]['part_quantity'] > data_part[index]['part_quantity']:   # Find the index of the part with the lowest quantity
                 index = j
         data_part[i], data_part[index] = data_part[index], data_part[i] # Swap the position the lowest quantity part at the current index
 
