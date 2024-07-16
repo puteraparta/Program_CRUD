@@ -28,15 +28,5 @@ The main aim of this system is to provide a comprehensive solution for managing 
 4. Exit Program
 
 
-
-
-![Uploading image.png…]()
-
-
-
-
-
-
-
-
-By using this structure, the program ensures a user-friendly interface that guides users through the various functionalities of the warehouse inventory system.
+By using this structure, 
+the program ensures a user-friendly interface that guides users through the various functionalities of the warehouse inventory system.
