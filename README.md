@@ -1,4 +1,4 @@
-# capstone_module1
+# CAPSTONE MODULE 1
 Capstone Module 1 Program CRUD
 Heavy Equipment Spare Part Warehouse Inventory System
 This program is designed for managing the inventory and operations of a warehouse dealing in heavy equipment spare parts. 
