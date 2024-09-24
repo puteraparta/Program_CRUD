@@ -48,7 +48,7 @@ data_part=[{
             'brand':'Renault',
             'part_quantity':0,
             'piece_price':70000,
-            'stock_status':'In Stock'
+            'stock_status':'Out of Stock'
             },
             ]
 
@@ -63,16 +63,16 @@ filter_view_order = []       # Placeholder for filtering and viewing orders
 
 # DISPLAY FUNCTION
 # Function to view stock data for parts
-def view_stock_part(data_part):                 # Print a header for the stock data
-    print("\nStock Data")                       # Initialize an empty list to store formatted data rows
-    empty_list=[]                               # Iterate through each part dictionary in data_part
+def view_stock_part(data_part):                 
+    print("\nStock Data")                       # Print a header for the stock data
+    empty_list=[]                               # Initialize an empty list to store formatted data rows
     for i in data_part:                         # Iterate through each part dictionary in data_part
 
         # Extract relevant information from the part dictionary and append as a list
         empty_list.append([i['part_number'],i['part_name'],i['brand'],i['part_quantity'],i['piece_price'],i['stock_status']])
 
     # Print the formatted data using tabulate with specific formatting options
-    print(tabulate(empty_list, headers=['Part_Number', 'Part_Name', 'Brand', 'Part_Qty_(Pcs)', 'Piece_Price_(Rp)', 'Stock_Status'], tablefmt='mixed_grid', numalign='center', stralign='center')) 
+    print(tabulate(empty_list, headers=['Part_Number', 'Part_Name', 'Brand', 'Part_Qty_(Pcs)', 'Piece_Price_(Rp)', 'Stock_Status'], tablefmt='mixed_grid', numalign='left', stralign='center')) 
 
 # Function to display current stock data for parts
 def show_stock_part(data_part):
@@ -211,8 +211,9 @@ def stock_management_menu(sub_menu):
 def add_new_part():
     while True:
         while True:
-            while True:
+            while True: 
                 part_number = input("\nEnter Part Number: ")
+                
                 part_number_str=''
                 for i in range(len(part_number.split())):
                     part_number_str=part_number_str+part_number.split()[i]
@@ -235,6 +236,7 @@ def add_new_part():
                 if data_part[i]['part_number'] == part_number.upper():
                     print(f'''Part number '{data_part[i]["part_number"]}' with name '{data_part[i]["part_name"]}' and brand '{data_part[i]["brand"]}' already exist.''')
                     break
+
             else:
                 break
             
@@ -250,8 +252,6 @@ def add_new_part():
                 break
             print('Empty Brand Input')
             
-            
-
         while True:
             part_quantity=(input(f'Enter Part Quantity for {part_name.title()} with {part_number.upper()}: '))
             if part_quantity.isdigit() and int(part_quantity)>0:
@@ -591,7 +591,7 @@ def process_order():
         while True:
             while True:
                 while True:
-                    part_number = input(f'\nEnter Part Number to order (cancel to exit): ')
+                    part_number = input(f'\nEnter Part Number to order (cancel to exit): ').upper()
                     
                     if part_number.lower()=='cancel':
                         break       # Exit the loop of inner loop if user inputs 'cancel'
